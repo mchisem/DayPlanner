@@ -9,25 +9,31 @@
 body {
     align-items: center;
     text-align: center;
-    background-color: skyblue !important;
+    background-color: skyblue;
     animation-name: sky;
-    animation-duration: 30s;
+    animation-duration: 50s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 @keyframes sky {
     0% {
         background-color: skyblue;
     }
-    50% {
+    25% {
         background-color: pink;
     }
-    100% {
+    50% {
         /* background-color: rgb(206, 117, 0); */
         /* background-color: darkgoldenrod; */
         background-color: darkorange;
+    }
+    75% {
+        background-color: blue;
+    }
+    100% {
+        background-color: darkblue;
     }
 }
 
@@ -67,13 +73,14 @@ header {
 }
 
 h1 {
-    font-size: 70px !important;
+    font-size: 65px !important;
     padding: 10px;
 }
 
 p {
     font-size: 20px;
     padding: 10px;
+    padding-bottom: 3px;
 }
 
 /* input table */
@@ -86,6 +93,7 @@ p {
     width: 1200px !important;
     color: white !important;
     border: black !important;
+    background-color: black;
 }
 
 th {
